@@ -1,0 +1,21 @@
+{
+  "name": "animate4phaser",
+  "version": "1.0.0",
+  "description": "animate4phaser",
+  "main": "./dist/bundle.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --config ./webpack.config.js --open",
+    "build": "webpack --mode=production",
+    "tran": "webpack  --config ./webpack.tran.js --mode=production && node reWrite.js"
+  },
+  "author": "chenxiang",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/phaser/3.22.0/phaser.js"></script>
+    <script src="bundle.js"></script>
+    <style>
+        #phaser-example {
+            display: inline-block;
+            vertical-align: top;
+        }
+        #op {
+            display: inline-block;
+            height: 90vh;
+            overflow: auto;
+        }
+        li{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <div id="phaser-example"></div>
+        <ul onclick="select(event)" id="op">
+        </ul>
+    </div>
+
+</body>
+<script>
+    const config = {
+        type: Phaser.WEBGL,
+        width: 800,
+        height: 600,
+        backgroundColor: '#2d2d2d',
+        parent: 'phaser-example',
+        scene: {
+            preload: preload,
+            create: create,
+            update: update
+        }
+    };
+
+    let image;
+    const game = new Phaser.Game(config);
+
+    function preload() {
+        this.load.image('img', 'https://b00.cdn.ipalfish.com/0/img/1c/64/85ff8cab1ec6c055f05bc51a2b1f');
+    }
+
+    function create() {
+        image = this.add.image(400, 300, 'img');
+    }
+
+    function update() {}
+    const animationList = window.phaserAnimate.list;
+    let nameList = Object.keys(animationList)
+    let options = ''
+    for (let index = 0; index < nameList.length; index++) {
+        options += '<li value=' + nameList[index] + '>' + nameList[index] + '</li>'
+    }
+    document.getElementById('op').innerHTML = options
+    function select(event) {
+        const value = event.target.innerText;
+        window.phaserAnimate.animate({
+            targets:image,
+            name:value,
+        })
+    }
+</script>
+
+</html>
