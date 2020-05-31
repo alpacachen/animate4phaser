@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "animate4phaser",
   "main": "./dist/bundle.js",
+  "repository": "https://github.com/alpacachen/animate4phaser.git",
   "files": [
     "dist"
   ],
