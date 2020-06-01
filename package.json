@@ -1,6 +1,6 @@
 {
   "name": "animate4phaser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "animate4phaser",
   "main": "./dist/bundle.js",
   "repository": "https://github.com/alpacachen/animate4phaser.git",
@@ -18,5 +18,13 @@
   "devDependencies": {
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "@babel/core": "^7.10.2",
+    "animate.css": "^4.1.0",
+    "babel-loader": "^8.1.0",
+    "bezier-easing": "^2.1.0",
+    "postcss-loader": "^3.0.0",
+    "webpack-dev-server": "^3.10.3"
   }
 }
