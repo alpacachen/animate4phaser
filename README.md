@@ -2,6 +2,9 @@
 phaser版的animate.css，支持了大多数动画
 ==========
 > 注意：由于没有精力测试和维护。使用前请务必clone项目yarn start一下，看看哪些动画不能用
+# DEMO
+[http://www.qwero.cn/#/animate4phaser](http://www.qwero.cn/#/animate4phaser "")
+
 #### 1、脚本调用
 ```js
 import { animate, list } from '@ipalfish/phaser-animate'
