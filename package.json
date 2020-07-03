@@ -1,6 +1,6 @@
 {
   "name": "animate4phaser",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "animate4phaser",
   "main": "./dist/bundle.js",
   "repository": "https://github.com/alpacachen/animate4phaser.git",
