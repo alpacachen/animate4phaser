@@ -1,14 +1,14 @@
 # phaser-animate
-phaser版的animate.css，支持了大多数动画
-==========
-> 注意：由于没有精力测试和维护。使用前请务必clone项目yarn start一下，看看哪些动画不能用
-# DEMO
-[http://www.qwero.cn/#/animate4phaser](http://www.qwero.cn/#/animate4phaser "")
+> animate.css for Phaser, Automatic conversion based on [animate.css](https://github.com/animate-css/animate.css)
 
-#### 1、脚本调用
+> ps:the core is Exhausting all the css rules animate.css used.so if animate.css use some rules that never used before, some animation might be wrong. 
+# DEMO
+[Demo](http://www.qwero.cn/index.html#/animate4phaser "")
+
+#### Usage
 ```js
 import { animate, list } from '@ipalfish/phaser-animate'
-// 支持动作列表
+// supported animationList
 console.log(list)
 
 const boy = new Phaser.GameObjects.Image(this.scene, 0, 0, src);
@@ -21,22 +21,27 @@ animate({
     console.log(e)
 })
 ```
+#### Options
+| option | necessary | type | desc |
+| :-------- |:-----:| :-----:| :-----|
+| targets | yes | Phaser.GameObject | - |
+| name | yes | String | supported animation name |
+| time | no | Number | animate duration |
+| mode | no | String | 'backwards' or 'forwards', default 'backwards' |
+| tweenScale | no | Number | Range of motion, default 1 |
 
-参数：
-```json
-{
-    targets: 必填,
-    name: 必填，
-    time: 非必填 默认1000ms
-    mode: 非必填 forwards｜backwards，默认backwards,
-    tweenScale: 非必填 Number 动作幅度默认1
-}
-```
-#### 2、示例
+#### Develop
 
 ```javaScript
+// install dependencies
 yarn
-yarn start
-```
 
-> ps：想要更新动画，就重新yarn add animate.css，然后 yarn tran。
+// run dev mode
+yarn start
+
+// get lastest animate.css code and transform
+yarn tran
+
+// build
+yarn build
+```

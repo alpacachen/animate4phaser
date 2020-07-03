@@ -396,7 +396,7 @@ ajv@^6.1.0, ajv@^6.10.2, ajv@^6.12.2:
 
 animate.css@^4.1.0:
   version "4.1.0"
-  resolved "http://npm.pri.ibanyu.com/animate.css/-/animate.css-4.1.0.tgz#dec2aabe4babfc6f6777f9a5cccd132838729b50"
+  resolved "https://npm.pri.ibanyu.com/animate.css/-/animate.css-4.1.0.tgz#dec2aabe4babfc6f6777f9a5cccd132838729b50"
   integrity sha1-3sKqvkur/G9nd/mlzM0TKDhym1A=
 
 ansi-colors@^3.0.0:
