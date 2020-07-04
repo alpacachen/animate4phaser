@@ -7,7 +7,7 @@
 
 #### Usage
 ```js
-import { animate, list } from '@ipalfish/phaser-animate'
+import { animate, list } from 'animate4phaser'
 // supported animationList
 console.log(list)
 
